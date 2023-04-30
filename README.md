@@ -30,3 +30,24 @@ name= input()
 age = input()
 print('user name',name)
 print("user age",age)
+
+*numerical operators
+x=5
+y=2
+print('addition of x+y=',x+y)
+print('Substraction of x-y=',x-y)
+print('Multiplication of x*y=',x*y)
+print('Float division of x/y=',x/y)
+print('interger division of x//y=',x//y)
+print('modulus of x%y=',x%y)
+print('power of x**y=',x**y)
+
+
+#some operations of string
+str_data="vinay"
+
+#concat operations in str
+full_name= str_data+ " "+ "HUndalekar"
+print ('full name=',full_name)
+mul_name= "vinay"*5
+print("mul name=",mul_name)
