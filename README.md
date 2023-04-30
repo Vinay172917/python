@@ -23,3 +23,10 @@ print("float to int type casting int_var = ", casted_float_var)
 numeric_str = '450'
 numeric_str= int(numeric_str) + 150
 print ('value of numeric_str',numeric_str)
+
+
+#how to use input() function in python
+name= input()
+age = input()
+print('user name',name)
+print("user age",age)
