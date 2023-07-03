@@ -1,1 +1,12 @@
+#syntex
+#while exp:
+#statements
 
+#write a program to print a table of 5
+num=5
+counter=1
+
+while counter<=10:
+    Ans=num * counter
+    print(num ,' * ',counter,' = ' ,Ans)
+    counter= counter+1
