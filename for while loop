@@ -1,1 +1,22 @@
+#how to insert numbers from 1 to 10
+for num in range(1,11):
+     #print(num) 
+
+     #how to print numbers from 1 to 15 (by 3 gap)
+for num in range(1,15,3):
+    print(num) 
+
+#how to print numbers from 10 to 1
+for num in range(10,0,-1):
+    #print(num)
+
+#write a program to find sum of give element using for loop
+
+int_list=[4,8-2,10,5]
+sum=0
+
+for num in int_list:
+   sum=sum + num
+print("sum=",sum)   
+
 
