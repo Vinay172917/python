@@ -1,1 +1,19 @@
+#how to use pythone if else part
+# a=10
+# b=10
 
+# if a==b:
+#     print("Yes")
+#     print ('Vinay is right')
+# else:
+#     print ("vinay is wrong")
+
+marks=88
+if marks>=90:
+    print("grade A")
+elif marks>=80 and marks<90:
+        print("grade B")
+elif marks>=70 and marks<80:
+            print("grade c")
+else:
+            print("grade D")
