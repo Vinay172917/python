@@ -1,1 +1,18 @@
+#how to use break Statements
 
+int_list = (7,3,9,5,8,11,13,5)
+
+#find out the even number in int_list
+
+for num in int_list:
+    print('current num=',num)
+    if num%2 == 0:
+         print('even number is=',num)
+         break
+
+#using continue print value from for loop which are greater then 10 (use for starting garbage data)
+
+for int in range(1,25):
+    if int>15:
+        continue
+    print(int)
