@@ -1,1 +1,18 @@
+#work with tuple(use for fixed values)
+
+#empty tuple
+t1=()
+
+#failed assignement and append
+#t1.append(5)
+#t1[0]=3
+
+t2=(23,4,32,45,33)
+print(len(t2))
+
+#indexing also works for tuple
+print(t2[3])
+print(t2[1 : 4])
+
+#indexing works , slicing work, iteration also works
 
