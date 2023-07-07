@@ -1,1 +1,7 @@
 
+str1="vinay"
+str2="fine"
+for i in range (len(str1)):
+    for j in range(len(str2)):
+      if(i == j):
+       print(str1[i]+str2[j], end="")
