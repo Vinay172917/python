@@ -1,1 +1,42 @@
+#How to print a string
+str1="Vinay"
+print(str1)
 
+#how to put ' in ""abs
+str2="vinay's"
+print(str2)
+
+str3='vinay is a "good" boy'
+print(str3)
+
+#use length function
+print("length of a str3",len(str3))
+
+#how to write multiple string
+str4='''vinay is a 
+good boy but 
+some error'''
+print(str4)
+
+
+#operators in string
+str5='Vinay'
+str6='ineuron'
+print(str5+str6)
+
+print(str5==str6)
+
+#how to print each character in string
+for char in str5:
+    print(char)
+print (str5[2])
+
+#update the character in str possible or not (list mai happened str mai not)
+#str6[3]="s"
+#print(str6)
+
+#convert into lower case/upper case
+print(str5.lower())
+print(str5.upper())
+
+#other functionality will be same as list like slicing, 
