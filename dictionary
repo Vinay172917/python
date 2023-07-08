@@ -1,1 +1,31 @@
+#dictionary in python
+dict1={}
+print(type(dict1))
 
+#how to insert data in dictionary
+
+dict2={}
+dict2["name"]="vinay"
+dict2["age"]=28
+dict2["Skills"]=["python","java"]
+dict2["city"]=("mumbai","goa")
+dict2[28]="random vinay"
+dict2['other_details']={'colour':'blue', 'nationality':'Indian'}
+print(dict2)
+
+#check the length of dictionary 
+print(len(dict2))
+
+#how to access the value of perticular key
+
+print(dict2["name"])
+print(dict2["age"])
+print(dict2["Skills"][1]) #this index using bcoz it has list value in it
+print(dict2["city"][1]) #using index number as it is tuple
+print(dict2['other_details']['nationality']) #nationality key used bcoz data save in another dictionary so we cant access why index number
+
+
+
+#how to update the value of perticular key
+#dict2["age"]=34
+#print(dict2)
