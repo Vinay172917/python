@@ -29,3 +29,42 @@ print(dict2['other_details']['nationality']) #nationality key used bcoz data sav
 #how to update the value of perticular key
 #dict2["age"]=34
 #print(dict2)
+
+#how to get keys from the dictionary 
+
+total_keys=list(dict2.keys())
+print('total number of keys= ',total_keys)
+
+#how to get values from the dictionary 
+
+total_values=list(dict2.values())
+print('total number of keys= ',total_values)
+
+#how to iterate on dictionary
+
+for k,v in dict2.items():
+    print("key= ",k,"value= ",v)
+
+#compare dictionary
+dict3= {'a': 2,'b':3,'c':5}
+dict4= {'b':3,'a': 2,'c':5} #here it doesnt depend on location of value in dictionary order doesnt depend on equality
+print(dict3==dict4)
+
+
+dict3= {'a': 5,'b':3,'c':5}
+dict4= {'b':3,'a': 2,'c':5}#here wrong value define false statement
+print(dict3==dict4)
+
+
+#how to delete specific key value from dictionary
+
+del dict2["age"]
+del dict2[28]
+print(dict2)
+
+#how to check key exist in dictionary or not?
+key_in_dict=list(dict2.keys())
+if "age" in key_in_dict:
+    print(True)
+else:
+     print(False)
