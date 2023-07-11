@@ -1,1 +1,27 @@
+#functions in python
+
+L1=[1,2,3,4,5,6]
+print('maximum number in the list:',max(L1))
+print('minimum number in the list:',min(L1))
+print('sum of numbers in the list:',sum(L1))
+
+#how do functions works?
+#they may or may not accept inpurt parameters 
+
+# #example of function which doesnt accept any parameter
+# & doesnt return anything
+
+def welcome_message():
+    print('Vinay is a good guy')
+welcome_message()
+
+
+# #example of function which doesnt accept any parameter
+# & does return saomething
+
+def bot_message():
+    return 23483
+print(bot_message()) #or 2nd way using variable also we can store the value
+R=bot_message()
+print(R)
 
