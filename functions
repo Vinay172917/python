@@ -25,3 +25,95 @@ print(bot_message()) #or 2nd way using variable also we can store the value
 R=bot_message()
 print(R)
 
+#example of function which accept some parameter
+# & does return values
+
+# def multi_of_two_nums(a,b):
+#     print("first number= ",a)
+#     print("Second number= ",b)
+#     multiplication= a*b
+#     return multiplication
+
+# num1=4
+# num2=5
+# result=multi_of_two_nums(num1,num2)
+# print(result)
+
+
+#write a function to calculate the factorial of number
+# def factorial(n):
+
+#     if n == 0  or  n == 1:
+#           return 1
+
+#     result=1
+#     for num in range(1, n+1):
+#         result = result * num
+#     return result
+
+# X=4
+# result=factorial(X)
+# print(result)               
+
+#using while loop
+
+# def factorial(n):
+#     counter=1 
+#     while n>=1:
+#        counter=counter*n
+#        n=n-1
+#     return counter   
+
+# X=4
+# ans=factorial(X)
+# print(ans)
+
+
+#how to return multiple values from functions
+# a,b,c,d=3,45,2,54
+# print("value of a=",a)
+# print("value of b=",b)
+# print("value of c=",c)
+# print("value of d=",d)
+
+
+def sqr_and_cube (n):
+    sqr=n*n
+    cube=n*n*n
+    return sqr,cube
+
+Num=5
+sqr_ans,cube_ans=sqr_and_cube(Num)
+print("Square of number= ",sqr_ans)
+print("cube of number= ",cube_ans)
+
+#how to create optional arguments in python
+
+def multiply (a, b=5):
+    result=a*b
+    return result
+
+num1=5
+num2=2
+print(multiply (num1, num2))
+print(multiply (num1))  #-> here we only passing number 1 then also executing program because in function we assign arguments for B
+print(multiply (num2))  #-> here also num2 also go to a as we assign b already
+
+#here if we revere will show error as non-default cant come before default parameter( non-default argument follows default argument)
+
+
+#Non key value arguments
+
+# def exmple_nonkeyvalue(*args):
+#     for parameters in args:
+#         print(parameters)
+
+# exmple_nonkeyvalue('vinay','is','very','good','guy')
+
+#key value arguments in python
+
+def example_of_kwargs(**kwargs):
+     for k,v in kwargs.items():
+        print('key is=',k,'host is=',v)
+
+example_of_kwargs(computer='vinay', password='v1234', port=234)
