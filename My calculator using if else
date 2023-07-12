@@ -1,1 +1,17 @@
 
+print("Enter the number1= ")
+number1=int(input())
+print("Enter the number2= ")
+number2=int(input())
+print("which operations do you want to perform '+','-','*'")
+number3=input()
+
+if number3=='+':
+    print("add= ",number1 + number2)
+elif number3=='*':
+    print("mul= ",number1 * number2)
+elif number3=='-':
+    print("sub=",number1 - number2) 
+else:
+    print("Not valid operations")
+  
