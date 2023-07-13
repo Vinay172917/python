@@ -1,1 +1,41 @@
+#How to create lambda function
 
+#first normal function using adding 5 in given number
+
+def add_five(n):
+    result=n+5
+    return result
+
+x=5
+print(add_five(x))
+ 
+
+#same program using lambda function
+
+lambda_add_five= lambda x: x + 5
+
+y=10
+print(lambda_add_five(y))
+
+#adding two numbers using lambda
+
+lambda_add_two= lambda x , y:x+y
+
+a=12
+b=8
+print(lambda_add_two(a,b))
+
+#write a lambda function to concenate two string
+
+lambda_conc_two= lambda x, y: x+y
+
+a="vinay "
+b="hund"
+print(lambda_conc_two(a,b))
+
+#write a lambda function to calculate of two given number
+lambda_max_two= lambda x,y: x if x>y else y
+
+a=5
+b=20
+print(lambda_max_two(a,b,))
