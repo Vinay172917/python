@@ -86,3 +86,14 @@ print(result)
 multiple_of=lambda x,y:x*y
 ans= functools.reduce(multiple_of,L2)
 print(ans)
+
+
+#How to use filter()
+
+#create only list of odd element
+
+L3=[1,3,5,7,2,4,6,7]
+
+filter_odd=lambda x : x % 2 !=0
+Ans=list(filter(filter_odd,L3))
+print(Ans)
