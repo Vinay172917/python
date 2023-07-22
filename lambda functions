@@ -60,3 +60,29 @@ list_b=[3,2,4,5,5]
 sum_two_number=lambda x, y : x + y
 result=list(map(sum_two_number, list_a ,list_b))
 print(result)
+
+
+
+#How to use reduce 
+
+import functools
+
+L1=[1,2,3,4,5]
+
+add_two_nums=lambda x, y:x+y
+result=functools.reduce(add_two_nums, L1)
+print(result)
+
+#how to use reduce func
+
+import functools
+ 
+L2=[1,2,3,4,5,6,7]
+sum_of= lambda x,y: x+y
+result= functools.reduce(sum_of,L2)
+print(result)
+
+
+multiple_of=lambda x,y:x*y
+ans= functools.reduce(multiple_of,L2)
+print(ans)
