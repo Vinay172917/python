@@ -1,1 +1,34 @@
+#write a program to generate 1 to 20 number
+result=[]
+for i in range (1,11):
+    result.append(i)
+print(result)
 
+
+#above using list comprehension
+Ans=[i for i in range (1,11)]
+print(Ans)
+
+#get all the the Odd numbers from 1 to 15
+odd=[i for i in range(1,16) if i%2!=0]
+print(odd)
+
+#get all the the Odd numbers from my input list
+L1=[1,2,4,6,7,9,11]
+odd=[i for i in L1 if i%2!=0]
+print(odd)
+
+#convert all string into upper case
+L2=["hi","vinay","better"]
+capital=[i.upper() for i in L2 ]
+print(capital)
+
+#put all negative number after positive numbers from give list
+L3=[1,-1,2,-5,9,10,-6]
+# result1=[i for i in L3 if i>0]
+# result2=[i for i in L3 if i<0]
+# print(result1+result2)
+
+#another way
+result=[i for i in L3 if i>0]+[i for i in L3 if i<0]
+print(result)
