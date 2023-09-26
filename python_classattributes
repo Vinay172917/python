@@ -1,0 +1,26 @@
+class Employee:
+
+    empcount=0
+
+
+    def __init__(self, name, age):
+    #instance variable or instance attributes
+       self.emp_name=name
+       self.emp_age=age
+       Employee.empcount += 1
+    #method of class
+    def displayEmployeeinfo(self):
+       print("Employee name: ",self.emp_name, "Employee age= ", self.emp_age)
+    def displayEmployeecount(self):
+       print("Employee count=", Employee.empcount)
+
+
+emp1= Employee("Vinay", 28)
+
+
+emp1.displayEmployeeinfo()
+emp1.displayEmployeecount()
+
+emp2= Employee("rahul",23)
+emp2.displayEmployeeinfo()
+emp2.displayEmployeecount()
