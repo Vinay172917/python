@@ -1,0 +1,21 @@
+class person:
+    Name="Vinay"
+    age=28
+    occupation="Engineer"
+    #constructor of class
+    def info(self): #self is paramter which assign current value of the variable
+        print("name:", self.name,"is" "age:",self.age)
+
+
+#method of class
+a=person()
+a.name="Shubham"
+a.age=34
+a.occupation= "hr" 
+b=person()
+b.name= "rahul"
+b.age=45
+# print(a.name, a.age)
+# print(b.name, b.age)
+b.info()
+a.info()
