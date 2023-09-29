@@ -1,0 +1,29 @@
+#what is static mathod in python
+class car:
+    carcount=0
+    def __init__(self,name,model):
+        self.car_name=name
+        self.car_model=model
+        car.carcount=+1
+
+    def displaycardetails(self):
+        print("car name is=",self.car_name, "& car model is=",self.car_model)
+    def displaycarcount(self):
+        print("count=",car.carcount)    
+
+    @staticmethod
+    def welcome_msg():
+        print("Favorite car:")
+
+car.welcome_msg()      
+car1=car("honda","city")
+car1.displaycardetails() 
+car1.displaycarcount() 
+
+#another example
+
+class calculation:
+    def addtwonums(num1,num2):
+        print("sum of two number is=",num1+num2)
+    
+calculation.addtwonums(10,5)  
