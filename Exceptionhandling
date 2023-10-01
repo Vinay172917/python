@@ -1,1 +1,30 @@
+# a=10
+# print("hello")
+# print(a/0)
+# # print("bye")  <<<< here we can see in 2nd print error happened out put not coming for 3rd print for this condition exception handling occurs
+
+
+a=5
+try:
+    result=a/0
+    print(result)
+except:
+    print("error happened")
+
+
+print("bye")    # <importance of try nd except code program goes continue
+
+
+
+num= 5
+L1=[1,2,3,4,5,6,7,8]
+dict_a={'name' : "vinay","rank": 1}
+try:
+    print("no way")
+    result=(num/5)
+    print(result)
+    print(L1[1])
+    print(dict_a['name'])
+except:
+    print("it was error")  #<<we can also mentioned own custome messgae errors in exception (key errro, index errror, ZeroDivisionError()) to know us which type of op we want
 
