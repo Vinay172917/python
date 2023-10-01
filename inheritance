@@ -1,0 +1,29 @@
+#inheritance in python
+
+class person:
+    def __init_(self,name):
+        self.name=name
+
+    def displayname(self):
+        print(self.name)
+
+    #by default we can say that perticular person is unemployed
+
+    def isemployed(self):
+        print(self.name,"is unemployed")
+
+ #derived class aka child class
+
+class Employee(person):
+    def isemployed(self):
+        print(self.name,"is employed")
+
+emp=person()
+emp.name="vinay"
+emp.displayname()      
+emp.isemployed()  
+
+emp1=Employee()
+emp1.name="raj"
+emp1.displayname()
+emp1.isemployed()  
